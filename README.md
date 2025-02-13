@@ -68,7 +68,7 @@ L
 📌 **Modifier la longueur des pseudos générés :**  
 Dans `generate_pseudo()`, limite la sortie :
 ```python
-pseudo = pseudo[:10]  # Limite à 10 caractères
+pseudo_length = min(5, len(self.valid_characters))  # Limite à 5 caractères
 ```
 
 ---
