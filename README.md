@@ -1,6 +1,5 @@
 ### 📌 **README.md**  
 
-```md
 # 🎭 s06821Dl3 - Générateur de Pseudo Aléatoire  
 
 🚀 **s06821Dl3** est une application Python avec une interface graphique (Tkinter) permettant de générer des pseudos uniques à partir d'un fichier texte contenant des caractères personnalisés.  
