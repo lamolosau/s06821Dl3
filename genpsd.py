@@ -6,7 +6,6 @@ class PseudoGeneratorApp:
     def __init__(self, root):
         self.root = root
         self.root.title("s06821Dl3")
-        self.root.iconbitmap("s06821Dl3.ico")
         
         # Fichier texte chargé
         self.file_path = None
@@ -62,7 +61,8 @@ class PseudoGeneratorApp:
 
         # Mélange et applique des majuscules/minuscules aléatoirement
         random.shuffle(self.valid_characters)
-        pseudo = "".join([char.upper() if random.choice([True, False]) else char.lower() for char in self.valid_characters])
+        pseudo_length = min(5, len(self.valid_characters))
+        pseudo = "".join([char.upper() if random.choice([True, False]) else char.lower() for char in self.valid_characters[:pseudo_length]])
         
         # Afficher le pseudo généré
         self.pseudo_display.delete(0, tk.END)
